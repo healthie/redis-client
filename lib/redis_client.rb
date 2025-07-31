@@ -733,6 +733,7 @@ class RedisClient
         end
 
         if !@disable_reconnection && config.retry_connecting?(tries, error)
+          Sidekiq.logger.warn("redis-client reconnect: #{error.message}")
           tries += 1
           retry
         else
