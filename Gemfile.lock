@@ -30,7 +30,7 @@ GEM
       rake
     redis (4.6.0)
     regexp_parser (2.9.0)
-    rexml (3.3.9)
+    rexml (3.4.2)
     rubocop (1.50.2)
       json (~> 2.3)
       parallel (~> 1.10)
